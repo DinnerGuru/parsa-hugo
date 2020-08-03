@@ -34,15 +34,20 @@
         <h1 class="mb-0">{{.Site.Params.author}}</h1>
         <h2 class="mb-100">{{.Site.Params.payoff}}</h2>
         <p class="mb-80 mr-5">{{.Site.Params.bio | markdownify }}</p>
+
+        <!--
         <span class="font-secondary text-dark mr-3 mr-sm-5">Seguici su:</span>
         <ul class="list-inline d-inline-block mb-5">
           {{ range .Site.Params.social }}
           <li class="list-inline-item mx-3"><a href="{{.URL}}" class="text-dark"><i class="{{.icon}}"></i></a></li>
           {{ end }}
         </ul>
+        -->
+
       </div>
-      <div class="col-lg-6 text-right">
-        <img class="img-fluid" src="{{.Site.Params.author_image | absURL}}" width="350" alt="banner-image">
+      <div class="col-lg-6 text-right d-md-none d-lg-block">
+        {{ $banner_image := resources.Get .Site.Params.author_image }}
+        <img class="img-fluid" src="{{ ($banner_image.Resize "450x").RelPermalink }}" alt="banner-image">
       </div>
     </div>
   </div>
@@ -88,12 +93,14 @@
           </div>
           <div class="post-content">
             <ul class="list-inline d-flex justify-content-between border-bottom post-meta pb-2 mb-4">
-              <li class="list-inline-item"><i class="ti-calendar mr-2"></i>{{ .PublishDate.Format "Jan 02, 2006" }}</li>
+              <li class="list-inline-item"><i class="ti-calendar mr-2"></i>
+                {{ partial "func/GetDate.html" . }}
+              </li>
               <li class="list-inline-item"><i class="ti-alarm-clock mr-2"></i><span class="eta"></span> read</li>
             </ul>
             <h4 class="mb-4"><a href="{{.Permalink}}" class="text-dark">{{ .Title }}</a></h4>
             <p class="mb-0 post-summary">{{.Summary }}</p>
-            <a class="btn btn-transparent mb-4" href="{{.Permalink}}">Continue...</a>
+            <a class="btn btn-transparent mb-4" href="{{.Permalink}}">{{ i18n "continue" }}</a>
           </div>
         </article>
       </div>

@@ -1,0 +1,2 @@
+{{/* .PublishDate.Format "Jan 02, 2006" */}}
+{{ .Date.Day }} {{ index $.Site.Data.mesi (printf "%d" .Date.Month) }} {{ .Date.Year }}

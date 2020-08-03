@@ -2,10 +2,11 @@
   <div class="section">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-          <a href="{{.Site.BaseURL}}"><img src="{{.Site.Params.logo | absURL }}" alt="{{.Site.Title}}" class="img-fluid"></a>
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0 align-self-center">
+          {{ $footer_logo := resources.Get .Site.Params.footer_logo }}
+          <a href="{{.Site.BaseURL}}"><img src="{{ ($footer_logo.Resize "100x q100").RelPermalink }}" alt="{{.Site.Title}}" class="img-fluid"></a>
         </div>
-        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0 align-self-center">
           {{ if .Site.Params.address_enabled }}
           <h6>Address</h6>
           <ul class="list-unstyled">
@@ -13,7 +14,7 @@
           </ul>
           {{ end }}
         </div>
-        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0 align-self-center">
           {{ if .Site.Params.contact_info_enabled }}
           <h6>Contact Info</h6>
           <ul class="list-unstyled">
@@ -22,7 +23,7 @@
           </ul>
           {{ end }}
         </div>
-        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0 align-self-center">
           <h6>Follow</h6>
           <ul class="list-inline d-inline-block">
             {{ range .Site.Params.social }}
