@@ -98,17 +98,17 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #ff6f00;
+  background: #B83928;
   color: #fff;
   border: 0;
 }
 
 .btn-primary:active {
-  background: #ff6f00 !important;
+  background: #B83928 !important;
 }
 
 .btn-primary:hover {
-  background: #ff8c33;
+  background: #C93E2C;
 }
 
 .btn-outline-light {
@@ -129,7 +129,7 @@ h6, .h6 {
 }
 
 .btn-transparent {
-  color: #ff6f00;
+  color: #B83928;
   border: 0;
 }
 
@@ -139,12 +139,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #ff8c33;
+  background: #C93E2C;
   color: #fff;
 }
 
 ::selection {
-  background: #ff8c33;
+  background: #C93E2C;
   color: #fff;
 }
 
@@ -178,7 +178,7 @@ body {
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #ff6f00;
+  background: #B83928;
   border-radius: 50%;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -201,7 +201,7 @@ body {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #ff6f00;
+  background: #B83928;
   border-radius: 50%;
 }
 
@@ -264,10 +264,10 @@ select:focus {
 }
 
 a:hover {
-  color: #ff6f00;
+  color: #B83928;
 }
 a.text-dark:hover {
-  color: #ff6f00 !important;
+  color: #B83928 !important;
 }
 
 .slick-slide {
@@ -330,15 +330,15 @@ a.text-dark:hover {
 }
 
 .bg-primary {
-  background: #ff6f00 !important;
+  background: #B83928 !important;
 }
 
 .bg-secondary {
-  background: #fdefe6 !important;
+  background: #F5F5F5 !important;
 }
 
 .text-primary {
-  color: #ff6f00 !important;
+  color: #B83928 !important;
 }
 
 .text-color {
@@ -410,7 +410,7 @@ a.text-dark:hover {
 .form-control:focus {
   outline: 0;
   box-shadow: none;
-  border-color: #ff6f00;
+  border-color: #B83928;
 }
 
 textarea.form-control {
@@ -509,7 +509,7 @@ textarea.form-control {
 
 .navbar .dropdown-item:active {
   color: #fff;
-  background-color: #ff6f00;
+  background-color: #B83928;
 }
 
 .search-icon {
@@ -646,7 +646,7 @@ textarea.form-control {
 }
 
 .instagram-post ul a:hover {
-  color: #ff6f00 !important;
+  color: #B83928 !important;
 }
 
 .instagram-post:hover::before {
@@ -662,7 +662,7 @@ textarea.form-control {
 /* homepage 2 */
 .hero-section {
   padding: 70px 0 0;
-  background-image: linear-gradient(#fff 45%, #fdefe6 0);
+  background-image: linear-gradient(#fff 45%, #F5F5F5 0);
 }
 
 .dividers {
@@ -802,7 +802,7 @@ textarea.form-control {
 blockquote {
   font-style: italic;
   color: #000000;
-  background: #fdefe6;
+  background: #F5F5F5;
   padding: 20px;
   font-weight: 600;
 }
@@ -850,7 +850,7 @@ blockquote {
 }
 
 .tag-list li a:hover {
-  color: #ff6f00;
+  color: #B83928;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
