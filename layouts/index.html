@@ -45,7 +45,7 @@
         -->
 
       </div>
-      <div class="col-lg-6 text-right d-md-none d-lg-block">
+      <div class="col-lg-6 text-right d-none d-lg-block">
         {{ $banner_image := resources.Get .Site.Params.author_image }}
         <img class="img-fluid" src="{{ ($banner_image.Resize "450x").RelPermalink }}" alt="banner-image">
       </div>
