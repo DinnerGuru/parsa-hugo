@@ -65,6 +65,7 @@ description = "This is meta description"
 preloader = true
 # search
 search = true
+enabled_read_time = true
 # about author
 author = "Themefisher"
 author_image = "images/banner-img.png"
