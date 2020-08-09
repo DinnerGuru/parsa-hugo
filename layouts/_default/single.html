@@ -25,7 +25,7 @@
         </ul>
         <article class="content">
           {{ with (.Resources.GetMatch "cover.jpg") }}
-            <img src="{{ (.Fill "800x500 smart").RelPermalink }}" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+            <img src="{{ (.Redize "800x").RelPermalink }}" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4">
           {{ end }}
 
           {{.Content}}

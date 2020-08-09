@@ -90,7 +90,7 @@
           class="article-full-width {{if not (modBool $i 2)}} article-right {{ end }}">
           <div class="post-image">
             {{ $article_image := .Resources.GetMatch "cover.jpg" }}
-            <a href="{{.Permalink}}"><img class="img-fluid" src="{{ ($article_image.Resize "x450").RelPermalink }}" alt="post-thumb"></a>
+            <a href="{{.Permalink}}"><img class="img-fluid" src="{{ ($article_image.Resize "x450 centered").RelPermalink }}" alt="post-thumb"></a>
           </div>
           <div class="post-content">
             <ul class="list-inline d-flex justify-content-between border-bottom post-meta pb-2 mb-4">
