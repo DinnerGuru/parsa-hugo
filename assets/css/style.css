@@ -854,3 +854,7 @@ blockquote {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+.navbar-brand img {
+  max-height: 95px;
+}
